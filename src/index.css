@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  color: rgb(69, 194, 20);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input:hover,
+button:hover{
+  background-color: rgb(9, 32, 0);
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  border: 1px solid rgb(81, 222, 25);
+  padding: 20px;
+  max-width: 480px;
+  margin: auto;
+}
+
+.content__row {
+  border: 1px solid rgb(81, 222, 25);
+  padding: 5px 10px;
+}
+
+.content__row__element {
+  padding: 5px;
+}
+
+.content__row__element.element__title {
+  font-size: 1.2rem;
+}
+
+.content__row__element.element__body {
+  font-style: italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content__row__element.element__action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__row {
+  display: flex;
+  padding: 5px 0px;
+}
+
+.form__row label{
+  flex: 0.4;
+}
+
+.form__row input{
+  flex: 1;
+}
+
+input, label, button {
+  padding: 5px;
+}
+
+button, input { 
+  border: 1px solid rgb(81, 222, 25);
+  box-shadow: 2px 2px 1px;
+}
+
+.global-edit {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(81, 222, 25);
 }
